@@ -1,0 +1,45 @@
+Nicholas Freeman
+
+1. Open up your ECC System, and start up the command terminal.
+2. In the terminal, type in "$ setup vmware"
+	a. This prepares vmware to run. 
+3. Next, in the terminal also run the command "minix-get-image"
+	a. Get's the image that VMware needs to run off of. Will also erase any previous images, so be careful.
+4. Next, run the command "vmware &"
+	a. This will take a while. Don't run the command multiple times, wait at least a minute before running the command
+ 		again if it doesn't work.
+5. Open a virtual machine and acess the "vm images" subfolder -> "minix3" folder -> minix3.vmx
+6. Use the username "root" to login and create a password by using the "passwd" command.
+	a. Be careful here, as the system won't allow you to see the characters you are typing.
+7. Use the command "tcpd ftp /usr/bin/in.ftpd &" to allow you to utilize FTP within your lunix command window.
+	a. This command let's you link your virtual machine to your host machine using FTP
+8. The command "ifconfig" within your VM will let you see the IP you need to connect to.
+9. Using this IP you can use your lunix terminal to type in "ftp (ip address of VM's ifconfig)"
+10. The following FTP commands will prove useful:
+
+	ls
+ 		 - show contents of remote directory 
+	pwd
+		 - show current location in VM 
+	cd
+		 - change directory on the VM 
+For Local Navigation 
+	lcd
+ 		- show current location on host machine 
+	lcd <directory>
+ 		- change location to <directory> 
+File Transfer 
+	get <file>
+ 		- copy <file> from current location in VM to current location on host. 
+	put <file>
+ 		- copy <file> from current location on host to current location in VM. 
+11. You are looking for a "main.c" file within the /usr/src directory.
+	a. In order to find this file, I would reccomend learning to utilize the "grep" command within your virtual 		machine. Navagating to /usr/src and searching using the "grep" command will tell you where you need to find "main.c"
+12. Once this file is found, modify it in your lunix machine to edit the starting message.
+	a. This is quite trivial
+13. Navagate to the /usr/src/kernel withing your VM. Now using your FTP commands in your Lunix terminal, use the 	 		"put" command listed above to overwrite the "main.c" within your VM.
+	a. Note: using the "put" command will automatically overwrite files with the same name, if one exists within the 		current directory.
+14. Now go back to your VM and navigate back to /usr/src.
+15. In the VM type in "make world" to rebuild your VM.
+16. Reboot to ensure that your new message is printed on startup of your VM. 
+	a. If the default message is still printed, I reccomend creating a new image and repeating the steps listed 		above.

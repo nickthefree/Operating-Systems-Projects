@@ -1,0 +1,14 @@
+Nicholas Freeman
+Lab 5 - Tuesday 2:15
+
+Part 1:
+-This program intruduces the concept of semaphores by creating threads that utilize mutual exclusion in order 
+to prevent desyncronization. 
+
+Part 2:
+-This program utilizes semaphores in order to solve the consumer/producer problem. Using mutual exclusion only
+one entity will have access to the buffer at a time. Producers place items in the buffer and consumers read from
+the buffer. Consumers consume from the buffer unless it is empty, in which case a signal is passed to the producers and
+they are allowed to begin producing again. If the buffer is full producers signal to the consumers and consumers
+begin consuming from the buffer once again. Producers are allowed to produce before the buffer is full again,
+but this is mostly random and determined by the PCB.

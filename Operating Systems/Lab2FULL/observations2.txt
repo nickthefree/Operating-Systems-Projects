@@ -1,0 +1,30 @@
+   Name: Nicholas Freeman 
+
+   Date: 1/15/2019  
+
+   Title: Lab2 -- Programming in C and use of Systems Calls
+
+Steps 1-4:
+-Original source file wouldn't compile because of a segmentation fault.
+-Switching argument to 1 (or any interger) makes the file compile.
+-Putting a 1 causes a 1 microsecond delay, and an input of 3000 causes a 3000 microsecond delay.
+-Having the processor wait a small amount of time (1 microsecond) seems to make some of the processes execute in rapid succession,
+   while making the processor wait longer periods (3000 microseconds) allows the PCB time to context switch much 
+   more frequently and execute parent and child processes in an alternating fashion.
+-Putting in 500 causes a 500 microsecond delay, and an input of 5000 causes a 5000 microsecond delay.
+
+Step 5:
+-For the take home assignment, it seems difficult to ensure that each process has exactly two children processes.
+-It seems utilitzing carefully crafted if/else statements can ensure that processes are forking when you 
+ want them to split into multiple processes.
+-Carefully crafting if/else statements also ensures that certain processes only operate on specific blocks of code.
+
+Step 6:
+-This program is similar to step 1, except it executes using two threads instead of two processes.
+-Memory is allocated to two pointers where the value of input delay is translated to the print functions for
+each respective thread.
+-Threads at the end wait for each other to end before terminating.
+
+Step 7:
+-This program is similar to step 1, but the child process runs the ls command
+-The parent process waits for its child process to terminate.

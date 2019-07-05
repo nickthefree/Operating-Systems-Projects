@@ -1,0 +1,541 @@
+Nicholas Freeman
+NOTE:
+    "dummy.txt" is 100.0 kb file
+    "dummy1.txt" is a 1.0 MB file
+    "dummy2.txt" is a 10.0 MB file
+    "dummy3.txt" is a 100.0 MB file
+----------------TIME TRAILS----------------
+Part 1:	
+      time ./part1 "dummy.txt"
+      real	0m0.003s
+user	0m0.002s
+sys	0m0.000s
+
+      time ./part1 "dummy1.txt"
+      real	0m0.004s
+user	0m0.000s
+sys	0m0.003s
+
+      time ./part1 "dummy2.txt"
+      real	0m0.003s
+user	0m0.000s
+sys	0m0.002s
+
+      time ./part1 "dummy3.txt"
+      real	0m0.004s
+user	0m0.000s
+sys	0m0.003s
+
+
+-------------
+Part 2:
+      time ./part2 "dummy.txt" 100
+      real	0m0.004s
+user	0m0.000s
+sys	0m0.003s
+
+      time ./part2 "dummy1.txt" 100
+      real	0m0.003s
+user	0m0.001s
+sys	0m0.002s
+
+      time ./part2 "dummy2.txt" 100
+      real	0m0.003s
+user	0m0.000s
+sys	0m0.003s
+
+      time ./part2 "dummy3.txt" 100
+      real	0m0.003s
+user	0m0.001s
+sys	0m0.001s
+
+      time ./part2 "dummy.txt" 1000
+      real	0m0.003s
+user	0m0.000s
+sys	0m0.002s
+
+      time ./part2 "dummy1.txt" 1000
+      real	0m0.003s
+user	0m0.000s
+sys	0m0.003s
+
+      time ./part2 "dummy2.txt" 1000
+      real	0m0.003s
+user	0m0.000s
+sys	0m0.002s
+
+      time ./part2 "dummy3.txt" 1000
+      real	0m0.003s
+user	0m0.000s
+sys	0m0.002s
+
+      time ./part2 "dummy.txt" 10000
+      real	0m0.003s
+user	0m0.000s
+sys	0m0.002s
+
+      time ./part2 "dummy1.txt" 10000
+      real	0m0.003s
+user	0m0.000s
+sys	0m0.002s
+
+      time ./part2 "dummy2.txt" 10000
+      real	0m0.002s
+user	0m0.001s
+sys	0m0.001s
+
+      time ./part2 "dummy3.txt" 10000
+           real	0m0.003s
+user	0m0.000s
+sys	0m0.002s
+
+      time ./part2 "dummy.txt" 100000
+real	0m0.003s
+user	0m0.000s
+sys	0m0.002s
+
+      time ./part2 "dummy1.txt" 100000
+      real	0m0.003s
+user	0m0.000s
+sys	0m0.002s
+
+      time ./part2 "dummy2.txt" 100000
+      real	0m0.003s
+user	0m0.000s
+sys	0m0.002s
+
+      time ./part2 "dummy3.txt" 100000
+      real	0m0.003s
+user	0m0.000s
+sys	0m0.002s
+
+----------------
+Part 3:
+      time ./part3 "dummy.txt" 100
+      real	0m0.055s
+user	0m0.000s
+sys	0m0.024s
+
+      time ./part3 "dummy.txt" 1000
+      real	0m0.015s
+user	0m0.000s
+sys	0m0.006s
+
+      time ./part3 "dummy.txt" 10000
+      real	0m0.017s
+user	0m0.002s
+sys	0m0.000s
+
+      time ./part3 "dummy.txt" 100000
+      real	0m0.012s
+user	0m0.001s
+sys	0m0.002s
+
+      time ./part3 "dummy1.txt" 100
+      real	0m0.028s
+user	0m0.001s
+sys	0m0.006s
+
+      time ./part3 "dummy1.txt" 1000
+      real	0m0.028s
+user	0m0.001s
+sys	0m0.006s
+
+      time ./part3 "dummy1.txt" 10000
+      real	0m0.028s
+user	0m0.001s
+sys	0m0.006s
+
+      time ./part3 "dummy1.txt" 100000
+      real	0m0.025s
+user	0m0.002s
+sys	0m0.003s
+
+      time ./part3 "dummy2.txt" 100
+      real	0m0.143s
+user	0m0.010s
+sys	0m0.024s
+
+      time ./part3 "dummy2.txt" 1000
+      real	0m0.138s
+user	0m0.007s
+sys	0m0.022s
+
+      time ./part3 "dummy2.txt" 10000
+      real	0m0.134s
+user	0m0.004s
+sys	0m0.024s
+
+      time ./part3 "dummy2.txt" 100000
+      real	0m0.130s
+user	0m0.002s
+sys	0m0.021s
+real	0m1.165s
+
+      time ./part3 "dummy3.txt" 100
+      real	0m1.234s
+user	0m0.078s
+sys	0m0.139s
+
+      time ./part3 "dummy3.txt" 1000
+      real	0m1.240s
+user	0m0.029s
+sys	0m0.174s
+
+      time ./part3 "dummy3.txt" 10000
+      real	0m1.188s
+user	0m0.012s
+sys	0m0.170s
+
+      time ./part3 "dummy3.txt" 100000
+      real	0m1.165s
+user	0m0.002s
+sys	0m0.161s
+
+-----------------
+Part 4:
+      time ./part4 "dummy.txt" 100 2
+      real	0m0.067s
+user	0m0.001s
+sys	0m0.025s
+
+      time ./part4 "dummy.txt" 100 8
+      real	0m0.115s
+user	0m0.004s
+sys	0m0.006s
+
+      time ./part4 "dummy.txt" 100 32
+      real	0m0.668s
+user	0m0.009s
+sys	0m0.022s
+
+      time ./part4 "dummy.txt" 100 64
+      real	0m1.213s
+user	0m0.012s
+sys	0m0.046s
+
+      time ./part4 "dummy.txt" 1000 2
+      real	0m0.027s
+user	0m0.001s
+sys	0m0.005s
+
+      time ./part4 "dummy.txt" 1000 8
+      real	0m0.073s
+user	0m0.001s
+sys	0m0.008s
+
+      time ./part4 "dummy.txt" 1000 32
+      real	0m0.304s
+user	0m0.002s
+sys	0m0.027s
+
+      time ./part4 "dummy.txt" 1000 64
+      real	0m0.610s
+user	0m0.007s
+sys	0m0.047s
+
+      time ./part4 "dummy.txt" 10000 2
+      real	0m0.021s
+user	0m0.000s
+sys	0m0.004s
+
+      time ./part4 "dummy.txt" 10000 8
+      real	0m0.073s
+user	0m0.001s
+sys	0m0.008s
+
+      time ./part4 "dummy.txt" 10000 32
+      real	0m0.301s
+user	0m0.003s
+sys	0m0.025s
+
+      time ./part4 "dummy.txt" 10000 64
+      real	0m0.601s
+user	0m0.011s
+sys	0m0.063s
+
+      time ./part4 "dummy.txt" 100000 2
+      real	0m0.027s
+user	0m0.001s
+sys	0m0.004s
+
+      time ./part4 "dummy.txt" 100000 8
+      real	0m0.073s
+user	0m0.000s
+sys	0m0.009s
+
+
+      time ./part4 "dummy.txt" 100000 32
+      real	0m0.289s
+user	0m0.000s
+sys	0m0.027s
+
+      time ./part4 "dummy.txt" 100000 64
+      real	0m0.561s
+user	0m0.001s
+sys	0m0.050s
+
+      time ./part4 "dummy1.txt" 100 2
+      real	0m0.055s
+user	0m0.004s
+sys	0m0.007s
+
+      time ./part4 "dummy1.txt" 100 8
+      real	0m0.204s
+user	0m0.014s
+sys	0m0.020s
+
+      time ./part4 "dummy1.txt" 100 32
+      real	0m0.798s
+user	0m0.044s
+sys	0m0.078s
+
+      time ./part4 "dummy1.txt" 100 64
+      real	0m1.635s
+user	0m0.109s
+sys	0m0.131s
+
+      time ./part4 "dummy1.txt" 1000 2
+      real	0m0.051s
+user	0m0.003s
+sys	0m0.006s
+
+      time ./part4 "dummy1.txt" 1000 8
+      real	0m0.187s
+user	0m0.004s
+sys	0m0.022s
+
+      time ./part4 "dummy1.txt" 1000 32
+      real	0m0.756s
+user	0m0.012s
+sys	0m0.079s
+
+      time ./part4 "dummy1.txt" 1000 64
+      real	0m1.546s
+user	0m0.026s
+sys	0m0.154s
+
+      time ./part4 "dummy1.txt" 10000 2
+      real	0m0.048s
+user	0m0.001s
+sys	0m0.007s
+
+      time ./part4 "dummy1.txt" 10000 8
+      real	0m0.185s
+user	0m0.001s
+sys	0m0.022s
+
+      time ./part4 "dummy1.txt" 10000 32
+      real	0m0.760s
+user	0m0.004s
+sys	0m0.080s
+
+      time ./part4 "dummy1.txt" 10000 64
+      real	0m1.499s
+user	0m0.014s
+sys	0m0.154s
+
+      time ./part4 "dummy1.txt" 100000 2
+      real	0m0.049s
+user	0m0.000s
+sys	0m0.007s
+
+      time ./part4 "dummy1.txt" 100000 8
+      real	0m0.189s
+user	0m0.001s
+sys	0m0.022s
+
+      time ./part4 "dummy1.txt" 100000 32
+      real	0m0.734s
+user	0m0.002s
+sys	0m0.075s
+
+      time ./part4 "dummy1.txt" 100000 64
+      real	0m1.487s
+user	0m0.010s
+sys	0m0.133s
+
+      time ./part4 "dummy2.txt" 100 2
+      real	0m0.322s
+user	0m0.028s
+sys	0m0.045s
+
+      time ./part4 "dummy2.txt" 100 8
+      real	0m1.168s
+user	0m0.090s
+sys	0m0.153s
+
+      time ./part4 "dummy2.txt" 100 32
+      real	0m4.540s
+user	0m0.350s
+sys	0m0.527s
+
+      time ./part4 "dummy2.txt" 100 64
+      real	0m9.640s
+user	0m0.814s
+sys	0m1.161s
+
+      time ./part4 "dummy2.txt" 1000 2
+      real	0m0.281s
+user	0m0.006s
+sys	0m0.050s
+
+      time ./part4 "dummy2.txt" 1000 8
+      real	0m1.064s
+user	0m0.021s
+sys	0m0.136s
+
+      time ./part4 "dummy2.txt" 1000 32
+      real	0m4.527s
+user	0m0.120s
+sys	0m0.612s
+
+      time ./part4 "dummy2.txt" 1000 64
+      real	0m11.474s
+user	0m0.346s
+sys	0m1.657s
+
+      time ./part4 "dummy2.txt" 10000 2
+      real	0m0.267s
+user	0m0.002s
+sys	0m0.048s
+
+      time ./part4 "dummy2.txt" 10000 8
+      real	0m1.065s
+user	0m0.016s
+sys	0m0.188s
+
+      time ./part4 "dummy2.txt" 10000 32
+      real	0m4.307s
+user	0m0.058s
+sys	0m0.627s
+
+      time ./part4 "dummy2.txt" 10000 64
+      real	0m9.977s
+user	0m0.164s
+sys	0m1.465s
+
+      time ./part4 "dummy2.txt" 100000 2
+      real	0m0.267s
+user	0m0.001s
+sys	0m0.041s
+
+      time ./part4 "dummy2.txt" 100000 8
+      real	0m1.056s
+user	0m0.002s
+sys	0m0.138s
+
+      time ./part4 "dummy2.txt" 100000 32
+      real	0m4.273s
+user	0m0.018s
+sys	0m0.577s
+      
+      time ./part4 "dummy2.txt" 100000 64
+      real	0m8.509s
+user	0m0.031s
+sys	0m1.109s
+
+      time ./part4 "dummy3.txt" 100 2
+      real	0m2.467s
+user	0m0.160s
+sys	0m0.224s
+
+      time ./part4 "dummy3.txt" 100 8
+      real	0m10.199s
+user	0m0.381s
+sys	0m0.062s
+
+      time ./part4 "dummy3.txt" 100 32
+      real	0m41.869s
+user	0m0.037s
+sys	0m1.234s
+
+      time ./part4 "dummy3.txt" 100 64
+      real	1m53.546s
+user	0m1.174s
+sys	0m9.963s
+
+
+      time ./part4 "dummy3.txt" 1000 2
+      real	0m2.435s
+user	0m0.054s
+sys	0m0.302s
+
+      time ./part4 "dummy3.txt" 1000 8
+      real	0m2.435s
+user	0m0.054s
+sys	0m0.302s
+
+      time ./part4 "dummy3.txt" 1000 32
+      real	0m9.829s
+user	0m0.220s
+sys	0m1.198s
+
+      time ./part4 "dummy3.txt" 1000 64
+      real	1m21.251s
+user	0m0.923s
+sys	0m9.499s
+
+
+      time ./part4 "dummy3.txt" 10000 2
+      real	0m2.531s
+user	0m0.033s
+sys	0m0.335s
+
+      time ./part4 "dummy3.txt" 10000 8
+      real	0m10.133s
+user	0m0.119s
+sys	0m1.344s
+
+      time ./part4 "dummy3.txt" 10000 32
+      real	0m39.845s
+user	0m0.458s
+sys	0m1.344s
+
+      time ./part4 "dummy3.txt" 10000 64
+      real	1m19.747s
+user	0m0.905s
+sys	0m10.107s
+
+      time ./part4 "dummy3.txt" 100000 2
+      real	0m2.521s
+user	0m0.003s
+sys	0m0.312s
+
+      time ./part4 "dummy3.txt" 100000 8
+      real	0m9.879s
+user	0m0.022s
+sys	0m1.231s
+
+      time ./part4 "dummy3.txt" 100000 32
+      real	0m38.848s
+user	0m0.096s
+sys	0m4.891s
+
+      time ./part4 "dummy3.txt" 100000 64
+      real	1m17.021s
+user	0m0.172s
+sys	0m9.363s
+-----------END TIME TRIALS-----------------
+-----------OBSERVATIONS--------------------
+Part 1: This program simply accepts a filename as a parameter and reads the content of the file to completion.
+I had some difficulty getting fscanf to function properly; however, the fread function worked flawlessly. The 
+time trials on this part were consistently low regardless of file size. 
+
+Part 2: This program accepted the same parameters and performs a similar function as Part 1, with the addition of a user specified buffer size. 
+The main general trend here seems to be: the larger the buffer size, the less time the program takes to execute.
+
+Part 3: This program extends from our second program by also writing a file for each read operation. The general trend
+between the time trails seems to still be the larger the buffer and the smaller the file, the less time it takes for 
+the program to execute. The larger the file or the smaller the buffer, the more time the system takes to process the
+program.
+
+Part 4: This program uses multiple threads to create multiple files of a dummy document. This is again similar
+to the previous test, with the use of threads and multiple copies being a new functionality. The time trails seem
+to be correlated with the number of copies, the size of the buffer, and the size of the file. The total amount of infomation
+being written--which would be a factor comprised of the size of the file being copied and the number of copies being writted--seems 
+to be the biggest factor. The buffer also correlates with time spent, but to a lesser degree than the aformentioned variables.
+
+      
+
+

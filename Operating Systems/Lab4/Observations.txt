@@ -1,0 +1,21 @@
+Nicholas Freeman
+Lab4 
+
+Step 1:
+-Ten threads are created and run a print statement in no specific order, each saying "Hello from thread x"
+-The threads then return and simultaneously execute a return print statement.
+-When run multiple times, the threads seem to be created and returned in different randomized orders.
+-Running a demanding process would theoretically slow down the process; however, nothing short of overloading
+the CPU seems to have a significant effect on the program. 
+-The main() and go() functions seem to have per-thread variables passed into them, as each variable is 
+independently stored on the stack.
+
+Step 2:
+-Without the join statement to close the threads, the program seems to output a variable quantity
+of threads, while sometimes even the main terminates before all ten threads can be created. 
+-This program is otherwise identical to Step 1, with only a for loop being removed.
+
+Step 3:
+-This program computes multiplication of matrices using threads. 
+-Each thread computes a different row of matrix multiplication, creating a new matrix one row at a time.
+-This means each thread creates exactly one row of the final matrix.

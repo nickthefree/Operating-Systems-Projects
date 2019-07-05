@@ -1,0 +1,42 @@
+Lab 8
+Nicholas Freeman
+
+LRU:
+-This algorithm stand for "Least recently used" and is a page replacement algorithm to decide which page needed to
+be replaced when a new page comes in.
+-The basis of this algorithm is a greedy algorithm where the page to be replaced is the least recently used page.
+-The algorithm functions as follows:
+1. Traverse the pages and do the following:
+	-If the page table is not full, insert pages into the page table until it is full(by request).
+		-Also, maintain the index of how recently each page was used.
+		-Also, increment any page faults that might occur.
+	-If the page table is full
+		-Do nothing if the page is in the current set
+		-Otherwise:
+			-Find a page that was least recently used
+			-Find it using the array that keeps track of page recency
+			-Replace this page with new request, increment page faults, and update index of current page
+2. Return any page faults.
+Translate these steps into code and you have your page replacement algorithm for LRU
+
+This algorithm seems to have exactly 11 page faults for any input over 10. Putting exactly 10 in results in slightly more (around 16). This is a negligable miss rate (<10%) for any number over 100. 
+
+FIFO:
+-This is a first in first out algorithm that is relatively straightforward.
+-The algorithm funcions as follows:
+1. Traverse the pages and do the following:
+	-If the page table holds less than it's total capacity, enter pages into the page table by request until full
+		-Also maintain pages in this "queue" data structure to maintain order of which pages arrived first
+			-Note: queues are inherently "first in first out" data structures, so keeping track of	
+				which page was inserted first is trivial
+		-Maintain pages in this queue and increment any page faults.
+	-If page table is full:
+		-Remove last inserted page in the queue, bump all of the elements over a spot, and insert the new page
+		-Increment page faults
+2. Return any page faults
+
+The sample miss rate for this code was actually identical to LRU. This algorithm seems to have exactly 11 page faults for any input over 10. Putting exactly 10 in results in slightly more (around 16). This is a negligable miss rate (<10%) for any number over 100. 
+
+Second Chance:
+-I apologize I didn't have the time/energy to understand and implement this algorithm.
+Please be merciful.

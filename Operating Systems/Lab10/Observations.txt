@@ -1,0 +1,11 @@
+//Nicholas Freeman
+//Lab 10--COEN 177L
+
+
+Part 1:
+	This part primarily consisted of creating a program that read two input files from start to end. During the readthrough of the files, a buffer of size 10000 would copy data from the file being read, and output it to stdout. The data would then be flushed and output to an output file using the lunix command "> (filename.txt)". This would essentially create a file that was the XOR combination of two input files. In other words, these two files bits were read in and XOR'ed with each other to create an output file of the same size as the original files.
+
+
+Part 2: 
+	This part was a bit more difficult. In order to XOR and ambiguous number of files, I created nested if statements to ensure that the appropriate number of files were being XOR'ed and added to the final stdout stream. It was tricky to get the system to not segmentation fault, but with careful coding you can manipulate the memory to get the program working properly. This program works with any input of 2-10 files, and will not operate unless this many arguments are passed to it. It is also not entirely necessary to create a buffer for each individual input file, as utilizing hierarchical logic design you can simply nest XOR statements in order to acheive the same result, while saving on precious physical memory (as dealing with 10 100MB files is no simple task, unless your system has very large quantities of physical memory).
+	You could use this program to recover an input file if you had all of the other input files as well as the output file. With some boolean algebra you could simply make a logic design equation in order to recover the data from the lost input file. 

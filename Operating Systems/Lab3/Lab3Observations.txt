@@ -1,0 +1,30 @@
+/* Name: Nicholas Freeman
+# Date: 01/22/2019 
+# Title: Lab3 
+Part 1:
+    Child one duplicates downstream while child two duplicates upstream. The program essentially runs the "ls | sort"
+command manually in C code. 
+Part 2:
+    This program has one child write upstream to a buffer while a second child reads off of the buffer one character
+at a time and prints the result--which is the name of the file. One caveat here is it prints the result with a single
+space between each character.
+Part 3:
+    This program is very similar to Part 2; however, it instead runs the "ls" command and outputs the result with
+a space between each character. The output is simply whatever the "ls" command would print, except with a space between
+each character. The code was almost identical to the code in part 2; however, it also utilizes the dup2 and execlp 
+commands in order to use the "ls" command and write the result to the buffer.
+Part 4:
+    This program implements the shell command "cat /etc/passwd | grep root" using C code. The code was almost identical
+to the code given for part 1. The differences in this program are only the arguments of the execlp command are different.
+The two execlp commands were written as follows: 
+execlp("grep", "grep", "root", 0); 
+execlp("cat", "cat", "/etc/passwd", 0);
+The syntax for this command does seem to be a bit tricky; however, this code is functional.
+Part 5:
+    This program is similar to the code in Part 2 as well, but its functionality is a bit different. This program
+has two children that "produce" and a main function that "consumes." The main function reads whatever the producer
+programs put on the buffer and outputs them in the main. In this case, it reads "Producer 1" and "Producer 2" ten 
+times.
+
+
+    
